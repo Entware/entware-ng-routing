@@ -67,7 +67,9 @@ endef
 
 PKG_DO_VARS:=CJDNS_RELEASE_VERSION=$(PKG_SOURCE_VERSION)
 
+
 PKG_DO_VARS+= Seccomp_NO=1
+
 
 ifneq ($(CONFIG_USE_UCLIBC),)
 PKG_DO_VARS+= UCLIBC=1
@@ -79,7 +81,7 @@ define Build/Compile
 	CC="$(TARGET_CC)" \
 	AR="$(TARGET_AR)" \
 	RANLIB="$(TARGET_RANLIB)" \
-	CFLAGS="$(TARGET_CFLAGS)" \
+	CFLAGS="$(TARGET_CFLAGS) -Wno-shift-negative-value" \
 	LDFLAGS="$(TARGET_LDFLAGS)" \
 	SYSTEM="linux" \
 	TARGET_ARCH="$(CONFIG_ARCH)" \
