@@ -1,9 +1,7 @@
-commit 3cc8d49900fafbe76f44e0e912ee888fafd8bbb4
-Merge: e656a6e 187937b
-Author: Simon Wunderlich <sw@simonwunderlich.de>
-Date:   Sat Aug 12 09:15:34 2017 +0200
+commit dabd5842b4bd7c9506cb6b8f9f4df0fa2ca28523
+Author: Alexander Krupenkin <mail@akru.me>
+Date:   Wed Dec 20 15:10:14 2017 +0300
 
-    Merge pull request #318 from ecsv/batadv-2017.2-ftbfs
-
-    batman-adv: Prevent FTBFS when redefining ether_setup
-
+    cjdns: update to version 0.20
+    
+    Signed-off-by: Alexander Krupenkin <mail@akru.me>
